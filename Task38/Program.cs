@@ -5,14 +5,14 @@
 
 void ReleaseArray(int[] array){
     int different = 0;
-    int min = 1000;
+    int min = array[1];
     int max = 0; 
 	for (int i = 0; i < array.Length; i++){
 		if (array[i] > max)
 			max = array[i];          
 	}
     for (int i = 0; i < array.Length; i++){
-		if (array[i] < min)
+        if (array[i] < min)
 			min = array[i];          
 	}
     different = max - min;
