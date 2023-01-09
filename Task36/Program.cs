@@ -4,12 +4,12 @@
 }
 
 void ReleaseArray(int[] array){
-	int sumEvenPositions = 0;
+	int sumOddPositions = 0;
 	for (int i = 0; i < array.Length; i++){
-		if (i % 2 == 0)
-			sumEvenPositions = array[i] + sumEvenPositions;
+		if (i % 2 != 0)
+			sumOddPositions = array[i] + sumOddPositions;
 	}
-	Console.WriteLine($"Сумма элементов, стоящих на нечетных позициях: {sumEvenPositions}");
+	Console.WriteLine($"Сумма элементов, стоящих на нечетных позициях: {sumOddPositions}");
 }
 
 Console.Clear();
